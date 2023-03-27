@@ -14,6 +14,7 @@ function App() {
       </div>
       <div className='redesociales'>
        <Redes/>
+       
       </div>
       <Navbar/>
     </div>
