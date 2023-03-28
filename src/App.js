@@ -2,21 +2,40 @@
 import './App.css';
 import logo from './picture/logo.jpg';
 import './css/logo.css';
-import Navbar from './componentes/navbar';
+import Navbar from './componentes/Navbar';
 import Redes from './componentes/redes';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from './componentes/Home';
+import Servicios from './componentes/Servicios';
+import About from './componentes/About';
+import Contact from './componentes/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      
+      {/* este div es el que contine el logo */}
       <div className='logo'>
       <img src={logo} className="logo" alt="logo" />
       </div>
+      {/* este div es el que contine los vinculos e imagenes de las redes */}
       <div className='redesociales'>
        <Redes/>
-       
-      </div>
+       </div>
+      {/* este div es el que contine el Navbar */}
+      <Router>
       <Navbar/>
+      <Routes>
+        <Route path='/Home'   element={<Home/>}/>
+        <Route path='/Servicios'  element={<Servicios/>}/>
+        <Route path='/About'  element={<About/>}/>
+        <Route path='/Contact'  element={<Contact/>}/>
+      </Routes>
+      </Router>
+
+      
+
     </div>
   );
 }
