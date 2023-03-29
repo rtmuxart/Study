@@ -5,6 +5,7 @@ import segunda from '../picture/2_Fotor.jpg';
 import tercera from '../picture/3_Fotor.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
+import '../css/carousel.css'
 
 
 
@@ -12,7 +13,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const Home = ()=> { 
 return(
 <>
-<Carousel>
+<Carousel className="carousel-component">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -42,7 +43,6 @@ return(
           src={tercera}
           alt="Third slide"
         />
-
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
