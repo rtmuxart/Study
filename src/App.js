@@ -6,7 +6,7 @@ import Navbar from './componentes/navbar';
 import Redes from './componentes/redes';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './componentes/Home';
-import Servicios from './componentes/Servicios';
+import Services from './componentes/Servicios';
 import About from './componentes/About';
 import Contact from './componentes/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,8 +16,10 @@ function App() {
   return (
     <div className="App">
       {/* este div es el que contine el logo */}
-      <div className='logo'>
-      <img src={logo} className="logo" alt="logo" />
+      <div className='logo-container'>
+        <div className='logo'>
+        <img src={logo} className="logo" alt="logo" />
+        </div>
       </div>
       {/* este div es el que contine los vinculos e imagenes de las redes */}
       <div className='redesociales'>
@@ -29,7 +31,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/Home'   element={<Home/>}/>
-        <Route path='/Servicios'  element={<Servicios/>}/>
+        <Route path='/Services'  element={<Services/>}/>
         <Route path='/About'  element={<About/>}/>
         <Route path='/Contact'  element={<Contact/>}/>
       </Routes>

@@ -1,39 +1,70 @@
-import React from "react";
-import { Link } from "react-router-dom";
+//import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+//import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+//import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const navbar = ()=> {
-return(
-<>
-<nav className="navbar navbar-expand-lg bg-body-tertiary" >
-  <div className="container-fluid">
-    <Link className="navbar-brand" to='/Home'>Home</Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li className="nav-item">
-          <Link className="nav-link" to='/Servicios' >Servicios</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to='/About' >About</Link>
-        </li>
-        <Link className="nav-link" to='/Contact' >Contact</Link>
-        
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+function OffcanvasExample() {
+  return (
+    <>
+      {['sm'].map((expand) => (
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+          <Container fluid>
+            
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Offcanvas
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-center flex-grow-1 pe-3">
+                  <Nav.Link href="/home">Home</Nav.Link>
+                  <Nav.Link href="/services">Services</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
 
-    </div>
-  </div>
-</nav> 
-
-</>
-
-);
-
+     {/*
+                  <NavDropdown
+                    title="Dropdown"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+    
+                </Nav>
+                <Form className="d-flex">
+                  <Form.Control
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-success">Search</Button>
+                </Form>
+                  */}
+                  </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
+  );
 }
-export default navbar;
+
+export default OffcanvasExample;

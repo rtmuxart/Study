@@ -5,7 +5,7 @@ import segunda from '../picture/2_Fotor.jpg';
 import tercera from '../picture/3_Fotor.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-import '../css/carousel.css'
+
 
 
 
@@ -13,8 +13,8 @@ import '../css/carousel.css'
 const Home = ()=> { 
 return(
 <>
-<Carousel className="carousel-component">
-      <Carousel.Item>
+<Carousel >
+      <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
           src={primera}
@@ -25,7 +25,7 @@ return(
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
           src={segunda}
@@ -37,7 +37,7 @@ return(
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
           src={tercera}
@@ -51,6 +51,10 @@ return(
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
+ 
+    
+   
 </>
 
 );
