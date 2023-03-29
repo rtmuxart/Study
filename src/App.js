@@ -16,11 +16,11 @@ function App() {
   return (
     <div className="App">
       {/* este div es el que contine el logo */}
-      <div className='logo-container'>
+      
         <div className='logo'>
         <img src={logo} className="logo" alt="logo" />
         </div>
-      </div>
+   
       {/* este div es el que contine los vinculos e imagenes de las redes */}
       <div className='redesociales'>
        <Redes/>
