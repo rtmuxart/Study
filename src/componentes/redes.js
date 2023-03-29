@@ -9,7 +9,7 @@ const redes = () =>{
 return (
 <>
 <div className="position-absolute top-0 end-0">
-    <img src={face} className="facebook"/>{"  "}
+    <img src={face} className="facebook"/>
     <img src={insta} className="insta"/>{"  "}
     <img src={twitter} className="twitter"/>{"  "}
     <img src={whatpsaap} className="whatpsaap"/>
