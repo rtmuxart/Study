@@ -2,7 +2,7 @@
 import './App.css';
 import logo from './picture/logo.jpg';
 import './css/logo.css';
-import Navbar from './componentes/Navbar';
+import Navbar from './componentes/navbar';
 import Redes from './componentes/redes';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './componentes/Home';
@@ -23,6 +23,7 @@ function App() {
       <div className='redesociales'>
        <Redes/>
        </div>
+      
       {/* este div es el que contine el Navbar */}
       <Router>
       <Navbar/>
@@ -34,7 +35,7 @@ function App() {
       </Routes>
       </Router>
 
-      
+       
 
     </div>
   );
