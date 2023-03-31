@@ -5,15 +5,16 @@ import segunda from '../picture/2_Fotor.jpg';
 import tercera from '../picture/3_Fotor.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Edificio from '../picture/FotoEdificio.jpg';
 
 
 
 const Home = ()=> { 
 return(
 <>
-<Carousel >
+    <Carousel >
       <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
@@ -51,6 +52,99 @@ return(
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
+
+
+    <div className="container">
+      <h2>Our Work</h2>
+      <div class="row d-flex text-center justify-content-center align-items-center">
+        <div class="col-md-6 col-xl-6 texto">
+          <p>
+          Lorem ipsum dolor sit amet. Non fugit adipisci et tempore beatae et enim nesciunt ea perferendis voluptas non commodi eaque. Sit sint harum aut doloremque galisum et minus harum sed quaerat consectetur! Qui iusto accusantium non quas tempora ut vitae excepturi quo nobis dolore hic consequatur magnam eos enim voluptas qui sapiente quia.
+          </p>
+        </div>
+        <div class="col-md-6 col-xl-6 ">
+          <img src={Edificio} class="card-img-top" alt="..."/>
+        </div>
+      </div>
+
+      <div class="row d-flex text-center justify-content-center align-items-center">
+        <div class="col-md-6 col-xl-6 texto">
+            <p>
+            Lorem ipsum dolor sit amet. Non fugit adipisci et tempore beatae et enim nesciunt ea perferendis voluptas non commodi eaque. Sit sint harum aut doloremque galisum et minus harum sed quaerat consectetur! Qui iusto accusantium non quas tempora ut vitae excepturi quo nobis dolore hic consequatur magnam eos enim voluptas qui sapiente quia.
+            </p>
+        </div>
+        <div class="col-md-6 col-xl-6">
+          <img src={Edificio} class="card-img-top" alt="..."/>
+        </div>
+        
+      </div>
+
+      <div class="row d-flex text-center justify-content-center align-items-center">
+        <div class="col-md-6 col-xl-6 texto">
+          <p>
+          Lorem ipsum dolor sit amet. Non fugit adipisci et tempore beatae et enim nesciunt ea perferendis voluptas non commodi eaque. Sit sint harum aut doloremque galisum et minus harum sed quaerat consectetur! Qui iusto accusantium non quas tempora ut vitae excepturi quo nobis dolore hic consequatur magnam eos enim voluptas qui sapiente quia.
+          </p>
+        </div>
+        <div class="col-md-6 col-xl-6">
+          <img src={Edificio} class="card-img-top" alt="..."/>
+        </div>
+      </div>
+    </div>
+
+    <div className="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+        <Card className="text-center" border="light">
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        </div>
+        <div class="col-md-6 col-xl-3">
+        <Card className="text-center" border="light">
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        </div>
+        <div class="col-md-6 col-xl-3">
+        <Card className="text-center" border="light">
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        </div>
+        <div class="col-md-6 col-xl-3">
+        <Card className="text-center" border="light">
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        </div>
+      </div>
+    </div>
+
+    
+
+   
 
  
     
