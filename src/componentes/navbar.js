@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 //import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import '../css/navbar.css';
 
 function OffcanvasExample() {
   return (
@@ -25,11 +26,11 @@ function OffcanvasExample() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link href="/home">Home</Nav.Link>
-                  <Nav.Link href="/services">Services</Nav.Link>
-                  <Nav.Link href="/about">About</Nav.Link>
-                  <Nav.Link href="/contact">Contact</Nav.Link>
+                <Nav className="navbar-title justify-content-center flex-grow-1 pe-3">
+                  <Nav.Link class="navbar-title" href="/home">Home</Nav.Link>
+                  <Nav.Link class="navbar-title" href="/services">Services</Nav.Link>
+                  <Nav.Link class="navbar-title" href="/about">About</Nav.Link>
+                  <Nav.Link class="navbar-title" href="/contact">Contact</Nav.Link>
 
      {/*
                   <NavDropdown
