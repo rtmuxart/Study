@@ -8,10 +8,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Edificio from '../picture/FotoEdificio.jpg';
+import '../css/home.css';
 
 
 
 const Home = ()=> { 
+
 return(
 <>
     <Carousel>
@@ -68,16 +70,15 @@ return(
         </div>
       </div>
 
-      <div class="row d-flex text-center justify-content-center align-items-center">
-        <div class="col-md-6 col-xl-6">
+      <div class="row change d-flex text-center justify-content-center align-items-center">
+        <div class="col-md-6 col-xl-6 columna2">
+          <img src={Edificio} class="card-img-top" alt="..."/>
+        </div>
+        <div class="col-md-6 col-xl-6 columna1">
             <p>
             Lorem ipsum dolor sit amet. Non fugit adipisci et tempore beatae et enim nesciunt ea perferendis voluptas non commodi eaque. Sit sint harum aut doloremque galisum et minus harum sed quaerat consectetur! Qui iusto accusantium non quas tempora ut vitae excepturi quo nobis dolore hic consequatur magnam eos enim voluptas qui sapiente quia.
             </p>
         </div>
-        <div class="col-md-6 col-xl-6">
-          <img src={Edificio} class="card-img-top" alt="..."/>
-        </div>
-        
       </div>
 
       <div class="row d-flex text-center justify-content-center align-items-center">

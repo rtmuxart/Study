@@ -1,0 +1,27 @@
+.container h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: blue;
+}
+
+.container img {
+    border-radius: 14px;
+}
+
+.row {
+   padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .change {
+        display: flex;
+        flex-direction: column;
+    }
+    .columna1 {
+        order: 1;
+    }
+    .columna2 {
+        order: 2;
+    }
+}
