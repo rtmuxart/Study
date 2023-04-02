@@ -31,6 +31,7 @@ function OffcanvasExample() {
                   <Nav.Link class="navbar-title" href="/services">Services</Nav.Link>
                   <Nav.Link class="navbar-title" href="/about">About</Nav.Link>
                   <Nav.Link class="navbar-title" href="/contact">Contact</Nav.Link>
+                  <Nav.Link class="navbar-title" href="/gallery">Gallery</Nav.Link>
 
      {/*
                   <NavDropdown

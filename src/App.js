@@ -9,6 +9,7 @@ import Home from './componentes/Home';
 import Services from './componentes/Servicios';
 import About from './componentes/About';
 import Contact from './componentes/Contact';
+import Gallery from './componentes/gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -21,6 +22,9 @@ function App() {
         <a href="/">
           <img src={logo} className="logo" alt="logo" />
         </a>
+        </div>
+        <div>
+        
         </div>
    
       {/* este div es el que contine los vinculos e imagenes de las redes */}
@@ -36,6 +40,7 @@ function App() {
         <Route path='/Services'  element={<Services/>}/>
         <Route path='/About'  element={<About/>}/>
         <Route path='/Contact'  element={<Contact/>}/>
+        <Route path='/gallery'  element={<Gallery/>}/>
       </Routes>
       </Router>
 
