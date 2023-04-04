@@ -11,6 +11,7 @@ import About from './componentes/About';
 import Contact from './componentes/Contact';
 import Gallery from './componentes/gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './componentes/footer';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
       </Routes>
       </Router>
 
-       
+       <Footer/>
 
     </div>
   );
