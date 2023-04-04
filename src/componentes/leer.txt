@@ -1,0 +1,6 @@
+para que se visualice todo lo primero es instalar 
+npm install react-router-dom {esto es para istalar la paqueria de enrutamiento}
+luego para la galeria instalas 
+npm i react-carousel-minimal
+luego para el footer
+npm install mdb-react-ui-kit 
