@@ -14,9 +14,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './componentes/footer';
 
 
+
 function App() {
   return (
+    
     <div className="App">
+      
       {/* este div es el que contine el logo */}
       
         <div className='logo'>
@@ -37,6 +40,7 @@ function App() {
       <Router>
       <Navbar/>
       <Routes>
+        <Route path='/'   element={<Home/>}/>
         <Route path='/Home'   element={<Home/>}/>
         <Route path='/Services'  element={<Services/>}/>
         <Route path='/About'  element={<About/>}/>
